@@ -36,9 +36,9 @@ public class Main {
 		String kingdom, name, type;
 		System.out.println("  Key  |     Kingdom     |       Name       |     Type");
 		for(int i=0; i<Population.getName().size(); i++) {
-			kingdom = Population.getÑertainKingdom(i);
-			name = Population.getÑertainName(i);
-			type = Population.getÑertainType(i);
+			kingdom = Population.getCertainKingdom(i);
+			name = Population.getCertainName(i);
+			type = Population.getCertainType(i);
 			System.out.printf("Key: %1s |", i);
 			System.out.printf(" Kingdom: %6s |", kingdom);
 			System.out.printf(" Name: %10s |", name);

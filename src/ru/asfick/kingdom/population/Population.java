@@ -18,7 +18,7 @@ public class Population {
 		return Population.name;
 	}
 	
-	public static String get—ertainName(int key){
+	public static String getCertainName(int key){
 		return Population.name.get(key);
 	}
 	
@@ -40,7 +40,7 @@ public class Population {
 		return Population.type;
 	}
 	
-	public static String get—ertainType(int key){
+	public static String getCertainType(int key){
 		return Population.type.get(key);
 	}
 	
@@ -62,7 +62,7 @@ public class Population {
 		return Population.kingdom;
 	}
 	
-	public static String get—ertainKingdom(int key){
+	public static String getCertainKingdom(int key){
 		return Population.kingdom.get(key);
 	}
 	
