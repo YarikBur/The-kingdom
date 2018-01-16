@@ -11,7 +11,10 @@ public class Main {
 	public static void main(String[] args) {
 		create();
 		out();
-		remove(2);
+		System.out.println("Delite 1, 3, 5\n");
+		remove(1);
+		remove(3);
+		remove(5);
 		out();
 	}
 	

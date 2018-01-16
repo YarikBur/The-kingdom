@@ -4,15 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Класс, который хранит всех людей в мире
+ * Class that keeps all people in the world
  * @author Yarik
- *
+ * @version 0.2
  */
 
 public class Population {
-	private static Map<Integer, String> name = new HashMap<Integer, String>();    // Динамический массив, хронящий ключ и имя человека
-	private static Map<Integer, String> type = new HashMap<Integer, String>();    // Динамический массив, хронящий ключ и тип человека
-	private static Map<Integer, String> kingdom = new HashMap<Integer, String>(); // Динамический массив, хронящий ключ и к какому государству относится человек
+	private static Map<Integer, String> name = new HashMap<Integer, String>();    // Dynamic array that stores the key and name of the person
+	private static Map<Integer, String> type = new HashMap<Integer, String>();    // A dynamic array that stores the key and type of a person
+	private static Map<Integer, String> kingdom = new HashMap<Integer, String>(); // Dynamic array storing the key and to which state the person belongs
 	
 	public static Map<Integer, String> getName(){
 		return Population.name;
@@ -29,7 +29,7 @@ public class Population {
 	public static void removeName(int key){
 		Population.name.remove(key);
 		String n;
-		for(int i = key;i<Population.name.size();i++) {
+		for(int i = key;i<Population.name.size();i++) {                           // List offset
 			n = Population.name.get(i+1);
 			Population.name.put(i, n);
 			Population.name.remove(i+1);
@@ -51,7 +51,7 @@ public class Population {
 	public static void removeType(int key){
 		Population.type.remove(key);
 		String n;
-		for(int i = key;i<Population.type.size();i++) {
+		for(int i = key;i<Population.type.size();i++) {                           // List offset
 			n = Population.type.get(i+1);
 			Population.type.put(i, n);
 			Population.type.remove(i+1);
@@ -73,7 +73,7 @@ public class Population {
 	public static void removeKingdom(int key){
 		Population.kingdom.remove(key);
 		String n;
-		for(int i = key;i<Population.kingdom.size();i++) {
+		for(int i = key;i<Population.kingdom.size();i++) {                        // List offset
 			n = Population.kingdom.get(i+1);
 			Population.kingdom.put(i, n);
 			Population.kingdom.remove(i+1);
