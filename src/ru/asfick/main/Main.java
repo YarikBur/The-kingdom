@@ -25,12 +25,16 @@ public class Main {
 		
 		System.out.println("Strength in \"RED\" kingdom: " + kd1.strength());
 		Population.addPerson(5, "Test", "Diablo", 1540, "Hell", "Red");
-		
+		check();
+		Population.addPerson(6, "Test2", "Diablo", 1540, "Hell", "Red");
+		check();
+	}
+	
+	private static void check() {
 		if(kd1.isAddedPopulation()) {
 			System.out.println("Strength in \"RED\" kingdom: " + kd1.strength());
 			out();
 		}
-		
 	}
 	
 	private static void create() {

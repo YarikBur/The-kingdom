@@ -40,8 +40,12 @@ public class Population {
 	}
 	
 	public static void addPerson(int key, String name, String type, int age, String build, String kingdom){
-		Population.person.put(key, new Person(name, type, age, build, kingdom, Population.person.size()));
-		
+		int id;
+		if(Population.getPerson().size()>2)
+			id = Population.getCertainPerson(Population.getPerson().size()-1).getId()+1;
+		else
+			id = Population.getPerson().size();
+		Population.person.put(key, new Person(name, type, age, build, kingdom, id));
 	}
 	
 	public static int getCertainIdPerson(int key) {
