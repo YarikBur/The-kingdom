@@ -6,6 +6,8 @@ public class Main {
 	
 	private static String kingdom[] = {"Red", "Green", "Blue"};
 	private static String name[] = {"Yarik", "Anna", "Lisa", "Anastasya", "Alex", "Ivan"};
+	private static int age[] = {16, 16, 16, 16, 18, 18};
+	private static String build[] = {"Tavern", "Church", "Score", "Street", "Street", "Hut"};
 	private static String type[] = {"Miner", "Cleaner"};
 	
 	public static void main(String[] args) {
@@ -13,36 +15,29 @@ public class Main {
 		out();
 		System.out.println("Delite 1, 3, 5\n");
 		remove(1);
-		remove(3);
-		remove(5);
 		out();
 	}
 	
 	private static void create() {
 		for(int i=0; i<name.length; i++) {
-			Population.addKingdom(i, kingdom[i/2]);
-			Population.addName(i, name[i]);
-			Population.addType(i, type[i/3]);
+			Population.addPerson(i, name[i], type[i/3], age[i], build[i], kingdom[i/2]);
 		}
 	}
 	
 	private static void remove(int key) {
-		Population.removeKingdom(key);
-		Population.removeName(key);
-		Population.removeType(key);
+		Population.removePerson(key);
 	}
 	
 	private static void out() {
-		String kingdom, name, type;
-		System.out.println("  Key  |     Kingdom     |       Name       |     Type");
-		for(int i=0; i<Population.getName().size(); i++) {
-			kingdom = Population.getCertainKingdom(i);
-			name = Population.getCertainName(i);
-			type = Population.getCertainType(i);
+		System.out.println("  Key  |       Kingdom       |       Name       |       Type       |       Age       |      Build");
+		
+		for(int i=0; i<Population.getPerson().size(); i++) {
 			System.out.printf("Key: %1s |", i);
-			System.out.printf(" Kingdom: %6s |", kingdom);
-			System.out.printf(" Name: %10s |", name);
-			System.out.printf(" Type: %8s \n", type);
+			System.out.printf(" Kingdom: %10s |", Population.getCertainKingdomPerson(i));
+			System.out.printf(" Name: %10s |", Population.getCertainNamePerson(i));
+			System.out.printf(" Type: %10s |", Population.getCertainTypePerson(i));
+			System.out.printf(" Age: %10s |", Population.getCertainAgePerson(i));
+			System.out.printf(" Build: %10s \n", Population.getCertainBuildPerson(i));
 		}
 		System.out.println("-------------------------------------------------------");
 	}

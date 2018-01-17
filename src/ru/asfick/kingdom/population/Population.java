@@ -6,77 +6,50 @@ import java.util.Map;
 /**
  * Class that keeps all people in the world
  * @author Yarik
- * @version 0.2
+ * @version 0.3
  */
 
 public class Population {
-	private static Map<Integer, String> name = new HashMap<Integer, String>();    // Dynamic array that stores the key and name of the person
-	private static Map<Integer, String> type = new HashMap<Integer, String>();    // A dynamic array that stores the key and type of a person
-	private static Map<Integer, String> kingdom = new HashMap<Integer, String>(); // Dynamic array storing the key and to which state the person belongs
+	private static Map<Integer, Person> person = new HashMap<Integer, Person>();  //Dynamic array storing the key and class of the person
 	
-	public static Map<Integer, String> getName(){
-		return Population.name;
+	public static Map<Integer, Person> getPerson(){
+		return Population.person;
 	}
 	
-	public static String getCertainName(int key){
-		return Population.name.get(key);
+	public static Person getCertainPerson(int key){
+		return Population.person.get(key);
 	}
 	
-	public static void addName(int key, String name){
-		Population.name.put(key, name);
+	public static String getCertainNamePerson(int key) {
+		return Population.getCertainPerson(key).getName();
 	}
 	
-	public static void removeName(int key){
-		Population.name.remove(key);
-		String n;
-		for(int i = key;i<Population.name.size();i++) {                           // List offset
-			n = Population.name.get(i+1);
-			Population.name.put(i, n);
-			Population.name.remove(i+1);
-		}
+	public static String getCertainTypePerson(int key) {
+		return Population.getCertainPerson(key).getType();
 	}
 	
-	public static Map<Integer, String> getType(){
-		return Population.type;
+	public static int getCertainAgePerson(int key) {
+		return Population.getCertainPerson(key).getAge();
 	}
 	
-	public static String getCertainType(int key){
-		return Population.type.get(key);
+	public static String getCertainBuildPerson(int key) {
+		return Population.getCertainPerson(key).getBuild();
+	}
+	public static String getCertainKingdomPerson(int key) {
+		return Population.getCertainPerson(key).getKingdom();
 	}
 	
-	public static void addType(int key, String name){
-		Population.type.put(key, name);
+	public static void addPerson(int key, String name, String type, int age, String build, String kingdom){
+		Population.person.put(key, new Person(name, type, age, build, kingdom));
 	}
 	
-	public static void removeType(int key){
-		Population.type.remove(key);
-		String n;
-		for(int i = key;i<Population.type.size();i++) {                           // List offset
-			n = Population.type.get(i+1);
-			Population.type.put(i, n);
-			Population.type.remove(i+1);
-		}
-	}
-	
-	public static Map<Integer, String> getKingdom(){
-		return Population.kingdom;
-	}
-	
-	public static String getCertainKingdom(int key){
-		return Population.kingdom.get(key);
-	}
-	
-	public static void addKingdom(int key, String name){
-		Population.kingdom.put(key, name);
-	}
-	
-	public static void removeKingdom(int key){
-		Population.kingdom.remove(key);
-		String n;
-		for(int i = key;i<Population.kingdom.size();i++) {                        // List offset
-			n = Population.kingdom.get(i+1);
-			Population.kingdom.put(i, n);
-			Population.kingdom.remove(i+1);
+	public static void removePerson(int key){
+		Population.person.remove(key);
+		Person n;
+		for(int i = key;i<Population.person.size();i++) {                           // List offset
+			n = Population.person.get(i+1);
+			Population.person.put(i, n);
+			Population.person.remove(i+1);
 		}
 	}
 }
