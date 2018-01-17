@@ -5,8 +5,8 @@ import java.util.Map;
 
 /**
  * Class that keeps all people in the world
- * @author Yarik
- * @version 0.3
+ * @author Asfick
+ * @version 0.3.1
  */
 
 public class Population {
@@ -40,7 +40,12 @@ public class Population {
 	}
 	
 	public static void addPerson(int key, String name, String type, int age, String build, String kingdom){
-		Population.person.put(key, new Person(name, type, age, build, kingdom));
+		Population.person.put(key, new Person(name, type, age, build, kingdom, Population.person.size()));
+		
+	}
+	
+	public static int getCertainIdPerson(int key) {
+		return Population.getCertainPerson(key).getId();
 	}
 	
 	public static void removePerson(int key){

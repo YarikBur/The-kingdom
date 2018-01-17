@@ -3,56 +3,58 @@ package ru.asfick.kingdom;
 import java.util.HashMap;
 import java.util.Map;
 
-import ru.asfick.kingdom.building.Building;
+import ru.asfick.kingdom.population.Person;
 import ru.asfick.kingdom.population.Population;
 
 public class Kingdom {
-	private Population p;
-	private Building b;
-	
 	private String name;
-	private Map<String, String> population = new HashMap<String, String>();
-	private Map<String, String> building = new HashMap<String, String>();
 	
-	public Kingdom(String name, Map<String, String> population, Map<String, String> building) {
+	private Map<Integer, Person> population = new HashMap<Integer, Person>();
+	
+	public Kingdom(String name) {
 		this.name = name;
-		this.population = population;
-		this.building = building;
+		int key =0;
+		for(int i=0; i<Population.getPerson().size(); i++) {
+			if(Population.getCertainKingdomPerson(i).equals(name)) {
+				population.put(key, Population.getCertainPerson(i));
+				key++;
+			}
+		}
 	}
 	
 	public String getName() {
 		return this.name;
 	}
 	
-	public Map<String, String> getPopulation() {
+	public Map<Integer, Person> getPopulation() {
 		return this.population;
 	}
 	
-	public void addPopulation(String Name, String type) {
-		this.population.put(type, Name);
+	public int strength() {
+		return population.size();
 	}
 	
-	public void removePopulation(int population, String type) {
-//		this.population -= population;
+	public boolean isAddedPopulation() {
+		boolean newPerson = false;
+		int b=0;
+		for(int i=0; i<population.size(); i++) {
+			for(int a=0; a<Population.getPerson().size(); a++) {
+				if(!population.get(i).getName().equals(Population.getCertainKingdomPerson(a))) {
+					newPerson = true;
+					b = a;
+				} else
+					newPerson = false;
+			}
+			if(newPerson) {
+				System.out.println("Added new Person: " + Population.getCertainPerson(b).getName());
+				population.put(Population.getCertainPerson(b).getId(), Population.getCertainPerson(b));
+				return true;
+			}
+		}
+		return false;
 	}
 	
-	public Map<String, String> getBuilding() {
-		return this.building;
-	}
-	
-	public void addBuilding(int building, String type) {
-//		this.building += building;
-	}
-	
-	public void removeBuilding(int building, String type) {
-//		this.building -= building;
-	}
-	
-	private void checkBuilding() {
-		
-	}
-	
-	private void checkPopulation() {
+	public void removePopulation() {
 		
 	}
 }

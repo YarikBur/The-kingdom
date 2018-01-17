@@ -6,13 +6,15 @@ public class Person {
 	private int age;
 	private String build;
 	private String kingdom;
+	private int id;
 	
-	public Person(String name, String type, int age, String build, String kingdom) {
+	public Person(String name, String type, int age, String build, String kingdom, int id) {
 		this.name = name;
 		this.type = type;
 		this.age = age;
 		this.build = build;
 		this.kingdom = kingdom;
+		this.id = id;
 	}
 	
 	public String getName() {
@@ -33,5 +35,13 @@ public class Person {
 	
 	public String getKingdom() {
 		return this.kingdom;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 }
