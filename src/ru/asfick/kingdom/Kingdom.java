@@ -12,8 +12,8 @@ public class Kingdom {
 	private Map<Integer, Person> population = new HashMap<Integer, Person>();
 	
 	public Kingdom(String name) {
-		this.name = name;
 		int key =0;
+		this.name = name;
 		for(int i=0; i<Population.getPerson().size(); i++) {
 			if(Population.getCertainKingdomPerson(i).equals(name)) {
 				population.put(key, Population.getCertainPerson(i));
