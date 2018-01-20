@@ -4,11 +4,11 @@ import ru.asfick.kingdom.Kingdom;
 import ru.asfick.kingdom.population.Population;
 
 public class Main {
-	private static String kingdom[] = {"Red", "Green", "Blue"};                               // Названия королевств
-	private static String name[] = {"Yarik", "Anna", "Lisa", "Anastasya", "Alex", "Ivan"};    // Именя людей
-	private static int age[] = {16, 16, 16, 16, 18, 18};                                      // Возраст людей
-	private static String build[] = {"Tavern", "Church", "Score", "Street", "Street", "Hut"}; // Здания, в которых находятся люди
-	private static String type[] = {"Miner", "Cleaner"};                                      // Тип людей
+	private static String kingdom[] = {"Red", "Green", "Blue"};                               // РќР°Р·РІР°РЅРёСЏ РєРѕСЂРѕР»РµРІСЃС‚РІ
+	private static String name[] = {"Yarik", "Anna", "Lisa", "Anastasya", "Alex", "Ivan"};    // РРјРµРЅСЏ Р»СЋРґРµР№
+	private static int age[] = {16, 16, 16, 16, 18, 18};                                      // Р’РѕР·СЂР°СЃС‚ Р»СЋРґРµР№
+	private static String build[] = {"Tavern", "Church", "Score", "Street", "Street", "Hut"}; // Р—РґР°РЅРёСЏ, РІ РєРѕС‚РѕСЂС‹С… РЅР°С…РѕРґСЏС‚СЃСЏ Р»СЋРґРё
+	private static String type[] = {"Miner", "Cleaner"};                                      // РўРёРї Р»СЋРґРµР№ 
 	
 	private static Kingdom kd1;
 	
