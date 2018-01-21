@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="lwjgl-assimp-javadoc.jar|lwjgl-assimp-natives-windows.jar|lwjgl-assimp-sources.jar|lwjgl-assimp.jar|lwjgl-bgfx-javadoc.jar|lwjgl-bgfx-natives-windows.jar|lwjgl-bgfx-sources.jar|lwjgl-bgfx.jar|lwjgl-egl-javadoc.jar|lwjgl-egl-sources.jar|lwjgl-egl.jar|lwjgl-glfw-javadoc.jar|lwjgl-glfw-natives-windows.jar|lwjgl-glfw-sources.jar|lwjgl-glfw.jar|lwjgl-javadoc.jar|lwjgl-jawt-javadoc.jar|lwjgl-jawt-sources.jar|lwjgl-jawt.jar|lwjgl-jemalloc-javadoc.jar|lwjgl-jemalloc-natives-windows.jar|lwjgl-jemalloc-sources.jar|lwjgl-jemalloc.jar|lwjgl-lmdb-javadoc.jar|lwjgl-lmdb-natives-windows.jar|lwjgl-lmdb-sources.jar|lwjgl-lmdb.jar|lwjgl-nanovg-javadoc.jar|lwjgl-nanovg-natives-windows.jar|lwjgl-nanovg-sources.jar|lwjgl-nanovg.jar|lwjgl-natives-windows.jar|lwjgl-nfd-javadoc.jar|lwjgl-nfd-natives-windows.jar|lwjgl-nfd-sources.jar|lwjgl-nfd.jar|lwjgl-nuklear-javadoc.jar|lwjgl-nuklear-natives-windows.jar|lwjgl-nuklear-sources.jar|lwjgl-nuklear.jar|lwjgl-openal-javadoc.jar|lwjgl-openal-natives-windows.jar|lwjgl-openal-sources.jar|lwjgl-openal.jar|lwjgl-opencl-javadoc.jar|lwjgl-opencl-sources.jar|lwjgl-opencl.jar|lwjgl-opengl-javadoc.jar|lwjgl-opengl-natives-windows.jar|lwjgl-opengl-sources.jar|lwjgl-opengl.jar|lwjgl-opengles-javadoc.jar|lwjgl-opengles-natives-windows.jar|lwjgl-opengles-sources.jar|lwjgl-opengles.jar|lwjgl-openvr-javadoc.jar|lwjgl-openvr-natives-windows.jar|lwjgl-openvr-sources.jar|lwjgl-openvr.jar|lwjgl-ovr-javadoc.jar|lwjgl-ovr-natives-windows.jar|lwjgl-ovr-sources.jar|lwjgl-ovr.jar|lwjgl-par-javadoc.jar|lwjgl-par-natives-windows.jar|lwjgl-par-sources.jar|lwjgl-par.jar|lwjgl-rpmalloc-javadoc.jar|lwjgl-rpmalloc-natives-windows.jar|lwjgl-rpmalloc-sources.jar|lwjgl-rpmalloc.jar|lwjgl-sources.jar|lwjgl-sse-javadoc.jar|lwjgl-sse-natives-windows.jar|lwjgl-sse-sources.jar|lwjgl-sse.jar|lwjgl-stb-javadoc.jar|lwjgl-stb-natives-windows.jar|lwjgl-stb-sources.jar|lwjgl-stb.jar|lwjgl-tinyexr-javadoc.jar|lwjgl-tinyexr-natives-windows.jar|lwjgl-tinyexr-sources.jar|lwjgl-tinyexr.jar|lwjgl-tinyfd-javadoc.jar|lwjgl-tinyfd-natives-windows.jar|lwjgl-tinyfd-sources.jar|lwjgl-tinyfd.jar|lwjgl-vulkan-javadoc.jar|lwjgl-vulkan-sources.jar|lwjgl-vulkan.jar|lwjgl-xxhash-javadoc.jar|lwjgl-xxhash-natives-windows.jar|lwjgl-xxhash-sources.jar|lwjgl-xxhash.jar|lwjgl-yoga-javadoc.jar|lwjgl-yoga-natives-windows.jar|lwjgl-yoga-sources.jar|lwjgl-yoga.jar|lwjgl.jar" including="lwjgl-assimp-javadoc.jar|lwjgl-assimp-natives-windows.jar|lwjgl-assimp-sources.jar|lwjgl-assimp.jar|lwjgl-bgfx-javadoc.jar|lwjgl-bgfx-natives-windows.jar|lwjgl-bgfx-sources.jar|lwjgl-bgfx.jar|lwjgl-egl-javadoc.jar|lwjgl-egl-sources.jar|lwjgl-egl.jar|lwjgl-glfw-javadoc.jar|lwjgl-glfw-natives-windows.jar|lwjgl-glfw-sources.jar|lwjgl-glfw.jar|lwjgl-javadoc.jar|lwjgl-jawt-javadoc.jar|lwjgl-jawt-sources.jar|lwjgl-jawt.jar|lwjgl-jemalloc-javadoc.jar|lwjgl-jemalloc-natives-windows.jar|lwjgl-jemalloc-sources.jar|lwjgl-jemalloc.jar|lwjgl-lmdb-javadoc.jar|lwjgl-lmdb-natives-windows.jar|lwjgl-lmdb-sources.jar|lwjgl-lmdb.jar|lwjgl-nanovg-javadoc.jar|lwjgl-nanovg-natives-windows.jar|lwjgl-nanovg-sources.jar|lwjgl-nanovg.jar|lwjgl-natives-windows.jar|lwjgl-nfd-javadoc.jar|lwjgl-nfd-natives-windows.jar|lwjgl-nfd-sources.jar|lwjgl-nfd.jar|lwjgl-nuklear-javadoc.jar|lwjgl-nuklear-natives-windows.jar|lwjgl-nuklear-sources.jar|lwjgl-nuklear.jar|lwjgl-openal-javadoc.jar|lwjgl-openal-natives-windows.jar|lwjgl-openal-sources.jar|lwjgl-openal.jar|lwjgl-opencl-javadoc.jar|lwjgl-opencl-sources.jar|lwjgl-opencl.jar|lwjgl-opengl-javadoc.jar|lwjgl-opengl-natives-windows.jar|lwjgl-opengl-sources.jar|lwjgl-opengl.jar|lwjgl-opengles-javadoc.jar|lwjgl-opengles-natives-windows.jar|lwjgl-opengles-sources.jar|lwjgl-opengles.jar|lwjgl-openvr-javadoc.jar|lwjgl-openvr-natives-windows.jar|lwjgl-openvr-sources.jar|lwjgl-openvr.jar|lwjgl-ovr-javadoc.jar|lwjgl-ovr-natives-windows.jar|lwjgl-ovr-sources.jar|lwjgl-ovr.jar|lwjgl-par-javadoc.jar|lwjgl-par-natives-windows.jar|lwjgl-par-sources.jar|lwjgl-par.jar|lwjgl-rpmalloc-javadoc.jar|lwjgl-rpmalloc-natives-windows.jar|lwjgl-rpmalloc-sources.jar|lwjgl-rpmalloc.jar|lwjgl-sources.jar|lwjgl-sse-javadoc.jar|lwjgl-sse-natives-windows.jar|lwjgl-sse-sources.jar|lwjgl-sse.jar|lwjgl-stb-javadoc.jar|lwjgl-stb-natives-windows.jar|lwjgl-stb-sources.jar|lwjgl-stb.jar|lwjgl-tinyexr-javadoc.jar|lwjgl-tinyexr-natives-windows.jar|lwjgl-tinyexr-sources.jar|lwjgl-tinyexr.jar|lwjgl-tinyfd-javadoc.jar|lwjgl-tinyfd-natives-windows.jar|lwjgl-tinyfd-sources.jar|lwjgl-tinyfd.jar|lwjgl-vulkan-javadoc.jar|lwjgl-vulkan-sources.jar|lwjgl-vulkan.jar|lwjgl-xxhash-javadoc.jar|lwjgl-xxhash-natives-windows.jar|lwjgl-xxhash-sources.jar|lwjgl-xxhash.jar|lwjgl-yoga-javadoc.jar|lwjgl-yoga-natives-windows.jar|lwjgl-yoga-sources.jar|lwjgl-yoga.jar|lwjgl.jar" kind="src" path="jars">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="kingdom/jars"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-assimp-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-assimp-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-assimp-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-assimp.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-bgfx-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-bgfx-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-bgfx-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-bgfx.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-egl-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-egl-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-egl.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-glfw-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-glfw-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-glfw-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-glfw.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jawt-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jawt-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jawt.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jemalloc-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jemalloc-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jemalloc-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-jemalloc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-lmdb-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-lmdb-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-lmdb-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-lmdb.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nanovg-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nanovg-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nanovg-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nanovg.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nfd-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nfd-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nfd-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nfd.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nuklear-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nuklear-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nuklear-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-nuklear.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openal-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openal-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openal-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openal.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opencl-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opencl-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opencl.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengl-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengl-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengl-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengl.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengles-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengles-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengles-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-opengles.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openvr-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openvr-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openvr-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-openvr.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-ovr-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-ovr-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-ovr-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-ovr.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-par-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-par-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-par-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-par.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-rpmalloc-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-rpmalloc-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-rpmalloc-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-rpmalloc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-sse-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-sse-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-sse-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-sse.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-stb-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-stb-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-stb-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-stb.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyexr-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyexr-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyexr-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyexr.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyfd-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyfd-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyfd-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-tinyfd.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-vulkan-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-vulkan-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-vulkan.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-xxhash-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-xxhash-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-xxhash-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-xxhash.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-yoga-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-yoga-natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-yoga-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl-yoga.jar"/>
+	<classpathentry exported="true" kind="lib" path="jars/lwjgl.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

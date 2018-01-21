@@ -2,6 +2,7 @@ package ru.asfick.main;
 
 import ru.asfick.kingdom.Kingdom;
 import ru.asfick.kingdom.population.Population;
+import ru.asfick.main.Window;
 
 public class Main {
 	private static String kingdom[] = {"Red", "Green", "Blue"};                               // Названия королевств (для проверки)
@@ -11,8 +12,12 @@ public class Main {
 	private static String type[] = {"Miner", "Cleaner"};                                      // Тип людей (для проверки)
 	
 	private static Kingdom kd1;                                                               // Королевство 1 (для проверки)
+	private static Window window;
 	
 	public static void main(String[] args) {
+		window = new Window(800, 600, "The kingdom", 0, 0);
+		window.run();
+		
 		create();                                                                             // Запускаем метод для заполения динамического массива с классами людей
 		out();                                                                                // Выводим все данные людей из динамического массива
 		kd1 = new Kingdom(kingdom[0]);                                                        // Создаем Королевство 1 (для проверки)
