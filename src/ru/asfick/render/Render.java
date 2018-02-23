@@ -19,13 +19,6 @@ import ru.asfick.utils.KeyboardHandler;
  */
 public class Render {
 	/**
-	 * Производит расчеты до прорисовки изображения
-	 */
-	public void updateBeforeDrawing() {
-		
-	}
-	
-	/**
 	 * Выполняет стандартную настройку перед рендером
 	 * @param width - ширина окна
 	 * @param height - высота окна
@@ -44,6 +37,13 @@ public class Render {
 	private void testInputKeyboard() {
 		if(KeyboardHandler.isKeyDown(GLFW_KEY_W))
 			System.out.println("W Key Pressed");
+	}
+	
+	/**
+	 * Производит расчеты до прорисовки изображения
+	 */
+	public void updateBeforeDrawing() {
+		
 	}
 	
 	/**

@@ -32,6 +32,7 @@ import static org.lwjgl.opengl.GL11.glClear;
 import static org.lwjgl.system.MemoryStack.stackPush;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
+import java.io.IOException;
 import java.nio.IntBuffer;
 
 import org.lwjgl.Version;
@@ -42,6 +43,7 @@ import org.lwjgl.system.MemoryStack;
 
 import ru.asfick.render.Render;
 import ru.asfick.utils.KeyboardHandler;
+import ru.asfick.utils.MusicController;
 
 /**
  * Класс, создающий окно
@@ -105,6 +107,13 @@ public class Window {
 	 * Запускает проверку на возможность создания окна
 	 */
 	private void init() {
+		try {
+			MusicController.initAudio("morning");
+		} catch (IOException e) {
+			System.out.println("Close this program");
+			e.printStackTrace();
+		}
+		
 		GLFWErrorCallback.createPrint(System.err).set();
 		if(!glfwInit())
 			throw new IllegalStateException("Unable to initialize GLFW");
@@ -145,7 +154,7 @@ public class Window {
 	 */
 	private void loop() {
 		rend.preRender(width, height);
-		
+		MusicController.startAudio("intro");
 		while(!glfwWindowShouldClose(window)) {  //отрисовка и расчеты
 			rend.updateBeforeDrawing();
 			
