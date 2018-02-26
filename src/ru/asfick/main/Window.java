@@ -42,7 +42,7 @@ import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.system.MemoryStack;
 
 import ru.asfick.render.Render;
-import ru.asfick.utils.KeyboardHandler;
+import ru.asfick.utils.InputController;
 import ru.asfick.utils.MusicController;
 
 /**
@@ -102,17 +102,31 @@ public class Window {
 		glfwSetErrorCallback(null).free();
 	}
 	
+	/**
+	 * Инициализирует контроллер ввода с кламиатуры и мыши
+	 */
+	private void initInputController() {
+		glfwSetKeyCallback(window, keyCallback = new InputController());
+	}
+	
+	/**
+	 * Инициализирует контроллер для управления саундтреками
+	 * @param localTime - Время суток, в которое было запущена игра
+	 */
+	@SuppressWarnings("unused")
+	private void initMusicController(String localTime) {
+		try {
+			MusicController.initAudio(localTime.toLowerCase());
+		} catch (IOException e) {
+			System.out.println("Close this program");
+			e.printStackTrace();
+		}
+	}
 	
 	/**
 	 * Запускает проверку на возможность создания окна
 	 */
 	private void init() {
-		try {
-			MusicController.initAudio("morning");
-		} catch (IOException e) {
-			System.out.println("Close this program");
-			e.printStackTrace();
-		}
 		
 		GLFWErrorCallback.createPrint(System.err).set();
 		if(!glfwInit())
@@ -125,7 +139,10 @@ public class Window {
 		if(window == NULL) 
 			throw new RuntimeException("Failed to create the GLFW window");
 		
-		glfwSetKeyCallback(window, keyCallback = new KeyboardHandler());
+		/* Exception in thread "main" java.lang.NoClassDefFoundError: org/lwjgl/openal/OpenALException */
+		//initMusicController("night");
+		
+		initInputController();
 		
 		glfwSetKeyCallback(window, (window, key, scancode, action, mods) ->{
 			if(key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE) glfwSetWindowShouldClose(window, true);

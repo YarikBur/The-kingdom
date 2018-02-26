@@ -10,7 +10,8 @@ import static org.lwjgl.glfw.GLFW.*;
 
 import org.lwjgl.opengl.GL;
 
-import ru.asfick.utils.KeyboardHandler;
+import ru.asfick.utils.InputController;
+import ru.asfick.utils.Text;
 
 /**
  * Класс для прорисовки
@@ -18,12 +19,23 @@ import ru.asfick.utils.KeyboardHandler;
  * @version 0.1
  */
 public class Render {
+	private Text t1;
+	
+	/**
+	 * Инициализирует все шрифты в игре
+	 */
+	private void initText() {
+		t1 = new Text("Verdana", "bold", 20);
+	}
+	
 	/**
 	 * Выполняет стандартную настройку перед рендером
 	 * @param width - ширина окна
 	 * @param height - высота окна
 	 */
 	public void preRender(int width, int height) {
+		initText();
+		
 		GL.createCapabilities();
 		
 		glMatrixMode(GL_PROJECTION);
@@ -35,7 +47,7 @@ public class Render {
 	}
 	
 	private void testInputKeyboard() {
-		if(KeyboardHandler.isKeyDown(GLFW_KEY_W))
+		if(InputController.isKeyDown(GLFW_KEY_W))
 			System.out.println("W Key Pressed");
 	}
 	
@@ -52,7 +64,7 @@ public class Render {
 	 * @param height - высота окна
 	 */
 	public void render(int width, int height) {
-		
+		t1.drawString(50, 80, "Hello, World!", Text.color("black"));
 	}
 
 	/**
